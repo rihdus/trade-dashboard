@@ -1,15 +1,15 @@
 webpackJsonp([0],{
 
-/***/ 106:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ngModule", function() { return ngModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__graph__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dataService__ = __webpack_require__(122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__controller__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__graph__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dataService__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__controller__ = __webpack_require__(120);
 /**
  * Created by t_mehes on 30/6/17.
  */
@@ -37,7 +37,7 @@ var ngModule = angular.module(__WEBPACK_IMPORTED_MODULE_0__config__["a" /* defau
 
 /***/ }),
 
-/***/ 110:
+/***/ 109:
 /***/ (function(module, exports, __webpack_require__) {
 
 (function (global, factory) {
@@ -938,7 +938,7 @@ function Chart(config) {
 
 function ChartInternal(api) {
     var $$ = this;
-    $$.d3 = window.d3 ? window.d3 :  true ? __webpack_require__(113) : undefined;
+    $$.d3 = window.d3 ? window.d3 :  true ? __webpack_require__(112) : undefined;
     $$.api = api;
     $$.config = $$.getDefaultConfig();
     $$.data = {};
@@ -8380,10 +8380,10 @@ return c3$1;
 
 /***/ }),
 
-/***/ 111:
+/***/ 110:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(104)();
+exports = module.exports = __webpack_require__(103)();
 // imports
 
 
@@ -8395,7 +8395,7 @@ exports.push([module.i, ".c3 svg{font:10px sans-serif;-webkit-tap-highlight-colo
 
 /***/ }),
 
-/***/ 113:
+/***/ 112:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
@@ -17959,16 +17959,16 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;!function() {
 
 /***/ }),
 
-/***/ 114:
+/***/ 113:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(111);
+var content = __webpack_require__(110);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(105)(content, {});
+var update = __webpack_require__(104)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -17986,14 +17986,14 @@ if(false) {
 
 /***/ }),
 
-/***/ 116:
+/***/ 115:
 /***/ (function(module, exports) {
 
 module.exports = "<div>\n  <div style=\"height: 500px\"></div>\n</div>\n";
 
 /***/ }),
 
-/***/ 119:
+/***/ 118:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
@@ -35082,11 +35082,11 @@ module.exports = "<div>\n  <div style=\"height: 500px\"></div>\n</div>\n";
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(125), __webpack_require__(126)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(124), __webpack_require__(125)(module)))
 
 /***/ }),
 
-/***/ 120:
+/***/ 119:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35101,7 +35101,7 @@ module.exports = "<div>\n  <div style=\"height: 500px\"></div>\n</div>\n";
 
 /***/ }),
 
-/***/ 121:
+/***/ 120:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35123,11 +35123,11 @@ module.exports = "<div>\n  <div style=\"height: 500px\"></div>\n</div>\n";
 
 /***/ }),
 
-/***/ 122:
+/***/ 121:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
 /**
  * Created by t_mehes on 30/6/17.
@@ -35142,7 +35142,7 @@ module.exports = "<div>\n  <div style=\"height: 500px\"></div>\n</div>\n";
   this.loadData = function () {
     var deferred = $q.defer();
     __webpack_require__.e/* require.ensure */(4).then((function (require) {
-      var data = __webpack_require__(118);
+      var data = __webpack_require__(117);
       _this.data = data;
       console.log(data);
       var tradeData = __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.reduce(data, function (result, item, key) {
@@ -35166,15 +35166,15 @@ module.exports = "<div>\n  <div style=\"height: 500px\"></div>\n</div>\n";
 
 /***/ }),
 
-/***/ 123:
+/***/ 122:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__graph_html__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__graph_html__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__graph_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__graph_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_c3__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_c3__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_c3___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_c3__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_c3_c3_css__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_c3_c3_css__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_c3_c3_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_c3_c3_css__);
 /**
  * Created by t_mehes on 30/6/17.
@@ -35222,7 +35222,7 @@ module.exports = "<div>\n  <div style=\"height: 500px\"></div>\n</div>\n";
 
 /***/ }),
 
-/***/ 125:
+/***/ 124:
 /***/ (function(module, exports) {
 
 var g;
@@ -35250,7 +35250,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 126:
+/***/ 125:
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
