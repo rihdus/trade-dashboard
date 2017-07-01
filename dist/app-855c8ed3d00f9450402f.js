@@ -31597,8 +31597,8 @@ function App() {
 module.exports = routesConfig;
 
 function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
-  $locationProvider.html5Mode(true).hashPrefix('!');
-  $urlRouterProvider.otherwise('/app/pricing');
+  $locationProvider.html5Mode(false).hashPrefix('');
+  $urlRouterProvider.otherwise('app/pricing');
 
   $stateProvider
     .state('app', {
@@ -33940,7 +33940,7 @@ angular_1.ng.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProv
 /* 99 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"ui fixed inverted menu\">\n  <div class=\"ui container\">\n    <a href=\"/app\" class=\"header item\">Dashboard</a>\n    <a href=\"/app/pricing\" class=\"item\">Pricing</a>\n    <div class=\"ui simple dropdown item\">\n      <a href=\"/app/trade\">Trades <i class=\"dropdown icon\"></i></a>\n      <div class=\"menu\">\n        <a class=\"item\" ng-click=\"actions.createTicket()\">New Ticket</a>\n      </div>\n    </div>\n    <div class=\"right item\"\n         style=\"padding: 0\">\n      <div class=\"ui simple dropdown item\">\n        Joh Doe <i class=\"dropdown icon\"></i>\n        <div class=\"menu\">\n          <a class=\"item\" href=\"#\">Account</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n";
+module.exports = "<div class=\"ui fixed inverted menu\">\n  <div class=\"ui container\">\n    <a href=\"#/app\" class=\"header item\">Dashboard</a>\n    <a href=\"#/app/pricing\" class=\"item\">Pricing</a>\n    <div class=\"ui simple dropdown item\">\n      <a href=\"#/app/trade\">Trades <i class=\"dropdown icon\"></i></a>\n      <div class=\"menu\">\n        <a class=\"item\" ng-click=\"actions.createTicket()\">New Ticket</a>\n      </div>\n    </div>\n    <div class=\"right item\"\n         style=\"padding: 0\">\n      <div class=\"ui simple dropdown item\">\n        Joh Doe <i class=\"dropdown icon\"></i>\n        <div class=\"menu\">\n          <a class=\"item\" href=\"#/app\">Account</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 100 */
