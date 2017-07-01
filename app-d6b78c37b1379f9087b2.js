@@ -5079,7 +5079,11 @@ function TicketBuilder($q, $document, $compile) {
 
     this.buildTicket = function (ticketData) {
       var deferred = $q.defer();
-      ticketScope.ticketFormData = {};
+      ticketScope.ticketFormData = {
+        baseCurrency: 'EUR',
+        instrument: 'EURUSD',
+        tradeType: 'QUICKTRADE'
+      };
       $modalElement.modal({
         onHide: function (elem) {
           /** Validate and submit */
@@ -31542,7 +31546,7 @@ window.$ = window.jQuery = __WEBPACK_IMPORTED_MODULE_1_jquery___default.a;
 
 
 
-function Header(TicketBuilder, tradeStoreService) {
+function Header(TicketBuilder, tradeStoreService, $location) {
   return {
     scope: {
       items: '='
@@ -31562,6 +31566,7 @@ function Header(TicketBuilder, tradeStoreService) {
           tickerBuilder.buildTicket()
             .then(function (newTicket) {
               tradeStoreService.addNewTrade(newTicket);
+              $location.path('/app/trade');
             });
         }
       };
@@ -31569,7 +31574,7 @@ function Header(TicketBuilder, tradeStoreService) {
   };
 }
 
-Header.$inject = ['TicketBuilder', 'tradeStoreService'];
+Header.$inject = ['TicketBuilder', 'tradeStoreService', '$location'];
 
 /* harmony default export */ __webpack_exports__["a"] = (Header);
 
@@ -33947,7 +33952,7 @@ module.exports = "<div class=\"ui fixed inverted menu\">\n  <div class=\"ui cont
 /* 101 */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"ui modal small\">\n  <i class=\"close icon\"></i>\n  <div class=\"trade-form tf-condensed\">\n    <div class=\"tf-header\">\n      <span ng-bind=\"title\"></span>\n    </div>\n    <div class=\"tf-content\">\n      <form class=\"ui form\" name=\"ticketForm\"\n      ng-submit=\"action.create()\">\n\n        <div class=\"field\">\n          <input type=\"text\" name=\"note\"\n                 ng-model=\"ticketFormData.note\"\n                 placeholder=\"Trade Note\">\n        </div>\n\n        <div class=\"field\">\n          <select class=\"ui search dropdown\" ng-model=\"ticketFormData.baseCurrency\">\n            <option value=\"\">Select Currency</option>\n            <option value=\"EUR\">3198_EUR</option>\n            <option value=\"USD\">8492_USD</option>\n          </select>\n        </div>\n\n        <div class=\"field\">\n          <div class=\"ui fluid selection dropdown\">\n            <span class=\"text\">Select Instrument</span>\n            <div class=\"menu\">\n              <div class=\"header\">\n                Instruments available for trade\n              </div>\n              <div class=\"item\">\n                <div><b>EURUSD</b></div>\n                <div>\n                  <small>Euro/US Dollar</small>\n                </div>\n              </div>\n              <div class=\"item\">\n                <div class=\"item\">\n                  <div><b>EURJYP</b></div>\n                  <div>\n                    <small>Euro/Japan Dollar</small>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"ui grid relaxed\">\n          <div class=\"eight wide column\">\n            <div class=\"tf-panel tfp-select\">\n              <div class=\"ui fluid selection dropdown\">\n                <label>\n                  <small>TYPE</small>\n                </label>\n                <span class=\"text\">Select Trade Type</span>\n                <div class=\"menu\">\n                  <div class=\"item\">\n                    <div>Quick Trade</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"eight wide column\">\n            <div class=\"tf-panel tfp-input\">\n              <label>\n                <small>EUR</small>\n              </label>\n              <input type=\"text\"\n                     name=\"trade-amount\"\n                     placeholder=\"Set Amount\">\n            </div>\n          </div>\n        </div>\n\n        <div class=\"field ui grid relaxed\">\n          <div class=\"eight wide column\">\n            <div class=\"price-panel price-sell\">\n              <div class=\"pp-label\">\n                <small>SELL - EUR</small>\n              </div>\n              <div>\n                <small class=\"pp-sub\">1.09</small>\n                <span class=\"price-value--large\">97</span>\n                <small class=\"pp-super\">5</small>\n              </div>\n              <div class=\"pp-label\">\n                <small>Limit @1.0099s</small>\n              </div>\n            </div>\n          </div>\n          <div class=\"field eight wide column\">\n            <div class=\"price-panel price-buy\">\n              <div class=\"pp-label\">\n                <small>BUY - EUR</small>\n              </div>\n              <div>\n                <small class=\"pp-sub\">1.09</small>\n                <span class=\"price-value--large\">97</span>\n                <small class=\"pp-super\">2</small>\n              </div>\n              <div class=\"pp-label\">\n                <small>Limit @1.0099s</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"field\">\n          <div class=\"ui fluid selection dropdown\">\n            <span>Price Tolerance</span>\n            <span class=\"text pull-right\">Select Instrument</span>\n            <div class=\"menu\">\n              <div class=\"header\">\n                Edit Price Tolerance\n              </div>\n              <div class=\"item\"><b>±0.01%</b></div>\n              <div class=\"item\"><b>±0.02%</b></div>\n              <div class=\"item\"><b>±0.04%</b></div>\n              <div class=\"item\"><b>±0.06%</b></div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"tf-actions\">\n          <button class=\"ui approve button\" type=\"submit\"\n                  style=\"width: 100%\">Save\n          </button>\n        </div>\n\n      </form>\n    </div>\n  </div>\n</div>\n";
+module.exports = "<div class=\"ui modal small\">\n  <i class=\"close icon\"></i>\n  <div class=\"trade-form tf-condensed\">\n    <div class=\"tf-header\">\n      <span ng-bind=\"title\"></span>\n    </div>\n    <div class=\"tf-content\">\n      <form class=\"ui form\" name=\"ticketForm\"\n            ng-submit=\"action.create()\">\n\n        <div class=\"field\">\n          <input type=\"text\" name=\"note\"\n                 ng-model=\"ticketFormData.note\"\n                 placeholder=\"Trade Note\">\n        </div>\n\n        <div class=\"field\">\n          <select class=\"ui selection dropdown\"\n                  ng-model=\"ticketFormData.baseCurrency\">\n            <option value=\"\">Select Currency</option>\n            <option value=\"EUR\">3198_EUR</option>\n            <option value=\"USD\">8492_USD</option>\n          </select>\n        </div>\n\n        <div class=\"field\">\n          <div class=\"ui fluid selection dropdown\">\n            <input type=\"hidden\" name=\"instrument\"\n                   ng-model=\"ticketFormData.instrument\">\n            <span class=\"text\">Select Instrument</span>\n            <div class=\"menu\">\n              <div class=\"header\">\n                Instruments available for trade\n              </div>\n              <div class=\"item\" data-value=\"EURUSD\">\n                <div><b>EURUSD</b></div>\n                <div>\n                  <small>Euro/US Dollar</small>\n                </div>\n              </div>\n              <div class=\"item\">\n                <div class=\"item\" data-value=\"EURJYP\">\n                  <div><b>EURJYP</b></div>\n                  <div>\n                    <small>Euro/Japan Dollar</small>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"ui grid relaxed\">\n          <div class=\"eight wide column\">\n            <div class=\"tf-panel tfp-select\">\n              <div class=\"ui fluid selection dropdown\">\n                <input type=\"hidden\" name=\"tradeType\"\n                       ng-model=\"ticketFormData.tradeType\">\n                <label>\n                  <small>TYPE</small>\n                </label>\n                <span class=\"text\">Select Trade Type</span>\n                <div class=\"menu\">\n                  <div class=\"item\" data-value=\"QUICKTRADE\">\n                    <div>Quick Trade</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"eight wide column\">\n            <div class=\"tf-panel tfp-input\">\n              <label>\n                <small>EUR</small>\n              </label>\n              <input type=\"number\"\n                     ng-model=\"ticketFormData.amount\"\n                     required\n                     name=\"trade_amount\"\n                     placeholder=\"Set Amount\">\n            </div>\n          </div>\n        </div>\n\n        <div class=\"field ui grid relaxed\">\n          <div class=\"eight wide column\">\n            <div class=\"price-panel price-sell\">\n              <div class=\"pp-label\">\n                <small>SELL - EUR</small>\n              </div>\n              <div>\n                <small class=\"pp-sub\">1.09</small>\n                <span class=\"price-value--large\">97</span>\n                <small class=\"pp-super\">5</small>\n              </div>\n              <div class=\"pp-label\">\n                <small>Limit @1.0099s</small>\n              </div>\n            </div>\n          </div>\n          <div class=\"field eight wide column\">\n            <div class=\"price-panel price-buy\">\n              <div class=\"pp-label\">\n                <small>BUY - EUR</small>\n              </div>\n              <div>\n                <small class=\"pp-sub\">1.09</small>\n                <span class=\"price-value--large\">97</span>\n                <small class=\"pp-super\">2</small>\n              </div>\n              <div class=\"pp-label\">\n                <small>Limit @1.0099s</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"field\">\n          <div class=\"ui fluid selection dropdown\">\n            <span>Price Tolerance</span>\n            <span class=\"text pull-right\">Select Instrument</span>\n            <div class=\"menu\">\n              <div class=\"header\">\n                Edit Price Tolerance\n              </div>\n              <div class=\"item\"><b>±0.01%</b></div>\n              <div class=\"item\"><b>±0.02%</b></div>\n              <div class=\"item\"><b>±0.04%</b></div>\n              <div class=\"item\"><b>±0.06%</b></div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"tf-actions\">\n          <button class=\"ui approve button\" type=\"submit\"\n                  style=\"width: 100%\">Save\n          </button>\n        </div>\n\n      </form>\n    </div>\n  </div>\n</div>\n";
 
 /***/ }),
 /* 102 */
@@ -33985,10 +33990,6 @@ angular
   .controller('AppController', App.controller)
   .directive('headerComponent', __WEBPACK_IMPORTED_MODULE_0__app_components_Header__["a" /* default */])
   .service('tradeStoreService', __WEBPACK_IMPORTED_MODULE_1__app_module_trades_store__["a" /* tradeStoreService */])
-// .component('footerComponent', Footer)
-// .component('mainSection', MainSection)
-// .component('todoTextInput', TodoTextInput)
-// .component('todoItem', TodoItem)
 ;
 
 
