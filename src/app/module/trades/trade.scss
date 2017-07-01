@@ -1,0 +1,84 @@
+.trade-card {
+
+}
+
+.trade-form {
+}
+
+.tf-condensed {
+}
+
+.tf-header {
+  padding: 20px 16px 10px;
+  font-size: 16px;
+}
+
+.tf-content {
+  padding: 10px 16px;
+}
+
+.tf-actions {
+  padding: 10px 16px;
+}
+
+.tf-panel {
+  border: 1px solid #CACACA;
+  label {
+    display: block;
+    font-weight: 600 !important;
+    margin-bottom: 5px;
+  }
+}
+
+.tfp-input {
+  label {
+    position: relative;
+    top: 8px;
+    left: 14px;
+  }
+  input {
+    border: none !important;
+    padding-left: 0;
+  }
+}
+
+.tfp-select {
+  .ui.dropdown {
+    border: none;
+  }
+}
+
+.price-panel {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.pp-label {
+  letter-spacing: 0.1em;
+}
+
+.pp-super {
+  position: relative;
+  bottom: 32px;
+  font-size: 14px;
+}
+.pp-sub {}
+
+.price-value--large {
+  font-size: 60px;
+}
+
+.price-sell {
+  background-color: #b43442;
+  color: #fff
+}
+
+.price-buy {
+  background-color: #417cbc;
+  color: #fff
+}
+
+
+.pull-right {
+  float: right;
+}

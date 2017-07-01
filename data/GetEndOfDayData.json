@@ -1,0 +1,42 @@
+[
+  {
+    "Symbol": "NDAQ",
+    "Prices": [
+      {
+        "Outcome": "Success",
+        "Message": null,
+        "Date": "6\/15\/2011",
+        "Open": 23.98,
+        "High": 24.04,
+        "Low": 23.46,
+        "Close": 23.51,
+        "LastSale": 23.51,
+        "Volume": 775942
+      }
+    ],
+    "Outcome": "Success",
+    "Message": null,
+    "Identity": "Cookie",
+    "Delay": 0.3744
+  },
+  {
+    "Symbol": "GOOG",
+    "Prices": [
+      {
+        "Outcome": "Success",
+        "Message": null,
+        "Date": "6\/15\/2011",
+        "Open": 505.03,
+        "High": 508.35,
+        "Low": 500.61,
+        "Close": 502.81,
+        "LastSale": 502.81,
+        "Volume": 871043
+      }
+    ],
+    "Outcome": "Success",
+    "Message": null,
+    "Identity": null,
+    "Delay": 0
+  }
+]

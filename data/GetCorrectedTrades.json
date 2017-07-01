@@ -1,0 +1,27 @@
+[
+  {
+    "Symbol": "NDAQ",
+    "StartTime": "09\/11\/2008 16:00:00.000",
+    "EndTime": "09\/11\/2008 16:30:00.000",
+    "Trades": [
+      {
+        "Timestamp": "09\/11\/2008 16:24:20.380",
+        "Quantity": 15000,
+        "Price": 30.66,
+        "Exchange": "Industry Regulatory Authority",
+        "MarketCenter": "D",
+        "SubMarketCenter": "Q",
+        "TRDI": "@ Z",
+        "CanceledIndicator": null,
+        "DOTT": "T",
+        "ITY": "Q",
+        "MSN": 2947932,
+        "OMSN": 2053495
+      }
+    ],
+    "Outcome": "Success",
+    "Message": null,
+    "Identity": "Cookie",
+    "Delay": 0.156
+  }
+]

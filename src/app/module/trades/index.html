@@ -1,0 +1,29 @@
+<div class="main-section">
+
+  <h2>Trades</h2>
+
+  <div ng-if="trades.length==0"
+       class="ui segment">
+    <div class="ui disabled dimmer"></div>
+    <p>No Trades Available</p>
+  </div>
+
+  <div>
+    <div class="ui cards">
+      <div ng-repeat="trade in trades"
+           class="card">
+        <div class="content">
+          <div class="header"
+               ng-bind="trade.name"></div>
+          <div class="meta"
+               ng-bind="trade.baseCurrency"></div>
+          <div class="description"
+               ng-if="trade.note"
+               ng-bind="trade.note">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

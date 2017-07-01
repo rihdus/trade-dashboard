@@ -1,0 +1,136 @@
+<div class="ui modal small">
+  <i class="close icon"></i>
+  <div class="trade-form tf-condensed">
+    <div class="tf-header">
+      <span ng-bind="title"></span>
+    </div>
+    <div class="tf-content">
+      <form class="ui form" name="ticketForm"
+      ng-submit="action.create()">
+
+        <div class="field">
+          <input type="text" name="note"
+                 ng-model="ticketFormData.note"
+                 placeholder="Trade Note">
+        </div>
+
+        <div class="field">
+          <select class="ui search dropdown" ng-model="ticketFormData.baseCurrency">
+            <option value="">Select Currency</option>
+            <option value="EUR">3198_EUR</option>
+            <option value="USD">8492_USD</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <div class="ui fluid selection dropdown">
+            <span class="text">Select Instrument</span>
+            <div class="menu">
+              <div class="header">
+                Instruments available for trade
+              </div>
+              <div class="item">
+                <div><b>EURUSD</b></div>
+                <div>
+                  <small>Euro/US Dollar</small>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item">
+                  <div><b>EURJYP</b></div>
+                  <div>
+                    <small>Euro/Japan Dollar</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui grid relaxed">
+          <div class="eight wide column">
+            <div class="tf-panel tfp-select">
+              <div class="ui fluid selection dropdown">
+                <label>
+                  <small>TYPE</small>
+                </label>
+                <span class="text">Select Trade Type</span>
+                <div class="menu">
+                  <div class="item">
+                    <div>Quick Trade</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eight wide column">
+            <div class="tf-panel tfp-input">
+              <label>
+                <small>EUR</small>
+              </label>
+              <input type="text"
+                     name="trade-amount"
+                     placeholder="Set Amount">
+            </div>
+          </div>
+        </div>
+
+        <div class="field ui grid relaxed">
+          <div class="eight wide column">
+            <div class="price-panel price-sell">
+              <div class="pp-label">
+                <small>SELL - EUR</small>
+              </div>
+              <div>
+                <small class="pp-sub">1.09</small>
+                <span class="price-value--large">97</span>
+                <small class="pp-super">5</small>
+              </div>
+              <div class="pp-label">
+                <small>Limit @1.0099s</small>
+              </div>
+            </div>
+          </div>
+          <div class="field eight wide column">
+            <div class="price-panel price-buy">
+              <div class="pp-label">
+                <small>BUY - EUR</small>
+              </div>
+              <div>
+                <small class="pp-sub">1.09</small>
+                <span class="price-value--large">97</span>
+                <small class="pp-super">2</small>
+              </div>
+              <div class="pp-label">
+                <small>Limit @1.0099s</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <div class="ui fluid selection dropdown">
+            <span>Price Tolerance</span>
+            <span class="text pull-right">Select Instrument</span>
+            <div class="menu">
+              <div class="header">
+                Edit Price Tolerance
+              </div>
+              <div class="item"><b>±0.01%</b></div>
+              <div class="item"><b>±0.02%</b></div>
+              <div class="item"><b>±0.04%</b></div>
+              <div class="item"><b>±0.06%</b></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tf-actions">
+          <button class="ui approve button" type="submit"
+                  style="width: 100%">Save
+          </button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
