@@ -987,17 +987,17 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(17));
+__export(__webpack_require__(79));
 __export(__webpack_require__(80));
 __export(__webpack_require__(81));
 __export(__webpack_require__(82));
 __export(__webpack_require__(83));
 __export(__webpack_require__(84));
-__export(__webpack_require__(85));
-__export(__webpack_require__(89));
+__export(__webpack_require__(88));
 __export(__webpack_require__(34));
 __export(__webpack_require__(39));
-__export(__webpack_require__(86));
-__export(__webpack_require__(79));
+__export(__webpack_require__(85));
+__export(__webpack_require__(78));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -4570,21 +4570,21 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var interface_1 = __webpack_require__(9);
 var transition_1 = __webpack_require__(20);
 var hookRegistry_1 = __webpack_require__(29);
-var coreResolvables_1 = __webpack_require__(70);
-var redirectTo_1 = __webpack_require__(74);
-var onEnterExitRetain_1 = __webpack_require__(73);
-var resolve_1 = __webpack_require__(75);
-var views_1 = __webpack_require__(78);
-var updateGlobals_1 = __webpack_require__(76);
-var url_1 = __webpack_require__(77);
+var coreResolvables_1 = __webpack_require__(69);
+var redirectTo_1 = __webpack_require__(73);
+var onEnterExitRetain_1 = __webpack_require__(72);
+var resolve_1 = __webpack_require__(74);
+var views_1 = __webpack_require__(77);
+var updateGlobals_1 = __webpack_require__(75);
+var url_1 = __webpack_require__(76);
 var lazyLoad_1 = __webpack_require__(35);
 var transitionEventType_1 = __webpack_require__(46);
 var transitionHook_1 = __webpack_require__(14);
 var predicates_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
-var ignoredTransition_1 = __webpack_require__(71);
-var invalidTransition_1 = __webpack_require__(72);
+var ignoredTransition_1 = __webpack_require__(70);
+var invalidTransition_1 = __webpack_require__(71);
 /**
  * The default [[Transition]] options.
  *
@@ -4822,10 +4822,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var angular_1 = __webpack_require__(10);
 var core_1 = __webpack_require__(4);
 var views_1 = __webpack_require__(32);
-var templateFactory_1 = __webpack_require__(96);
+var templateFactory_1 = __webpack_require__(95);
 var stateProvider_1 = __webpack_require__(59);
-var onEnterExitRetain_1 = __webpack_require__(95);
-var locationServices_1 = __webpack_require__(93);
+var onEnterExitRetain_1 = __webpack_require__(94);
+var locationServices_1 = __webpack_require__(92);
 var urlRouterProvider_1 = __webpack_require__(60);
 angular_1.ng.module("ui.router.angular1", []);
 var mod_init = angular_1.ng.module('ui.router.init', []);
@@ -5043,7 +5043,7 @@ exports.Ng1ViewConfig = Ng1ViewConfig;
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = TicketBuilder;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ticketFormModal_html__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ticketFormModal_html__ = __webpack_require__(100);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__ticketFormModal_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__ticketFormModal_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
@@ -8838,11 +8838,11 @@ __export(__webpack_require__(31));
 __export(__webpack_require__(32));
 __export(__webpack_require__(59));
 __export(__webpack_require__(60));
-__webpack_require__(92);
-__webpack_require__(90);
-__webpack_require__(94);
 __webpack_require__(91);
-__webpack_require__(97);
+__webpack_require__(89);
+__webpack_require__(93);
+__webpack_require__(90);
+__webpack_require__(96);
 exports.default = "ui.router";
 //# sourceMappingURL=index.js.map
 
@@ -8854,12 +8854,6 @@ exports.default = "ui.router";
 
 /***/ }),
 /* 65 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 66 */
 /***/ (function(module, exports) {
 
  /*
@@ -31531,11 +31525,11 @@ $.fn.visibility.settings = {
 
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Header_html__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Header_html__ = __webpack_require__(99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Header_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__Header_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
@@ -31580,10 +31574,10 @@ Header.$inject = ['TicketBuilder', 'tradeStoreService', '$location'];
 
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(99);
+__webpack_require__(98);
 
 module.exports = {
   template: __webpack_require__(61),
@@ -31596,7 +31590,7 @@ function App() {
 
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // var angular = require('angular');
@@ -31626,7 +31620,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
         pricingConfig: ['$q', '$ocLazyLoad', function ($q, $ocLazyLoad) {
           var deferred = $q.defer();
           __webpack_require__.e/* require.ensure */(0).then((function (require) {
-            var chunk = __webpack_require__(106);
+            var chunk = __webpack_require__(105);
             $ocLazyLoad.load({
               name: chunk.default.config.name
             });
@@ -31648,7 +31642,7 @@ function routesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
         config: ['$q', '$ocLazyLoad', function ($q, $ocLazyLoad) {
           var deferred = $q.defer();
           __webpack_require__.e/* require.ensure */(1).then((function (require) {
-            var chunk = __webpack_require__(107);
+            var chunk = __webpack_require__(106);
             $ocLazyLoad.load({name: chunk.default.config.name});
             deferred.resolve(chunk.default);
           }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);
@@ -31698,7 +31692,7 @@ function lazyLoaderService(modulePath) {
 
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31722,7 +31716,7 @@ exports.registerAddCoreResolvables = function (transitionService) {
 //# sourceMappingURL=coreResolvables.js.map
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31759,7 +31753,7 @@ exports.registerIgnoredTransitionHook = function (transitionService) {
 //# sourceMappingURL=ignoredTransition.js.map
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31784,7 +31778,7 @@ exports.registerInvalidTransitionHook = function (transitionService) {
 //# sourceMappingURL=invalidTransition.js.map
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31847,7 +31841,7 @@ exports.registerOnEnterHook = function (transitionService) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31890,7 +31884,7 @@ exports.registerRedirectToHook = function (transitionService) {
 //# sourceMappingURL=redirectTo.js.map
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31939,7 +31933,7 @@ exports.registerLazyResolveState = function (transitionService) {
 //# sourceMappingURL=resolve.js.map
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -31980,7 +31974,7 @@ exports.registerUpdateGlobalState = function (transitionService) {
 //# sourceMappingURL=updateGlobals.js.map
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32011,7 +32005,7 @@ exports.registerUpdateUrl = function (transitionService) {
 //# sourceMappingURL=url.js.map
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32064,7 +32058,7 @@ exports.registerActivateViews = function (transitionService) {
 //# sourceMappingURL=views.js.map
 
 /***/ }),
-/* 79 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32091,7 +32085,7 @@ exports.UIRouterPluginBase = UIRouterPluginBase;
 //# sourceMappingURL=interface.js.map
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32107,7 +32101,7 @@ __export(__webpack_require__(26));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32122,7 +32116,7 @@ __export(__webpack_require__(18));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 82 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32138,7 +32132,7 @@ __export(__webpack_require__(19));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32157,7 +32151,7 @@ __export(__webpack_require__(7));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32191,7 +32185,7 @@ __export(__webpack_require__(30));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32208,7 +32202,7 @@ __export(__webpack_require__(50));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32222,11 +32216,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module vanilla
  */
 /** */
-__export(__webpack_require__(87));
+__export(__webpack_require__(86));
 //# sourceMappingURL=vanilla.js.map
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32244,11 +32238,11 @@ __export(__webpack_require__(56));
 __export(__webpack_require__(54));
 __export(__webpack_require__(51));
 __export(__webpack_require__(15));
-__export(__webpack_require__(88));
+__export(__webpack_require__(87));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32283,7 +32277,7 @@ exports.memoryLocationPlugin = utils_1.locationPluginFactory("vanilla.memoryLoca
 //# sourceMappingURL=plugins.js.map
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32296,7 +32290,7 @@ __export(__webpack_require__(58));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -32873,7 +32867,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateDirectives.js.map
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33169,7 +33163,7 @@ angular_1.ng.module('ui.router.state').directive('uiView', $ViewDirectiveFill);
 //# sourceMappingURL=viewDirective.js.map
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33543,7 +33537,7 @@ var $urlMatcherFactoryProvider;
 //# sourceMappingURL=injectables.js.map
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33624,7 +33618,7 @@ exports.Ng1LocationServices = Ng1LocationServices;
 //# sourceMappingURL=locationServices.js.map
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33676,7 +33670,7 @@ angular_1.ng.module('ui.router.state')
 //# sourceMappingURL=stateFilters.js.map
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33707,7 +33701,7 @@ exports.getStateHookBuilder = function (hookName) {
 //# sourceMappingURL=onEnterExitRetain.js.map
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33907,7 +33901,7 @@ var scopeBindings = function (bindingsObj) { return Object.keys(bindingsObj || {
 //# sourceMappingURL=templateFactory.js.map
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -33936,49 +33930,46 @@ angular_1.ng.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProv
 //# sourceMappingURL=viewScroll.js.map
 
 /***/ }),
-/* 98 */,
-/* 99 */
+/* 97 */,
+/* 98 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 100 */
+/* 99 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"ui fixed inverted menu\">\n  <div class=\"ui container\">\n    <a href=\"/app\" class=\"header item\">Dashboard</a>\n    <a href=\"/app/pricing\" class=\"item\">Pricing</a>\n    <div class=\"ui simple dropdown item\">\n      <a href=\"/app/trade\">Trades <i class=\"dropdown icon\"></i></a>\n      <div class=\"menu\">\n        <a class=\"item\" ng-click=\"actions.createTicket()\">New Ticket</a>\n      </div>\n    </div>\n    <div class=\"right item\"\n         style=\"padding: 0\">\n      <div class=\"ui simple dropdown item\">\n        Joh Doe <i class=\"dropdown icon\"></i>\n        <div class=\"menu\">\n          <a class=\"item\" href=\"#\">Account</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n";
 
 /***/ }),
-/* 101 */
+/* 100 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"ui modal small\">\n  <i class=\"close icon\"></i>\n  <div class=\"trade-form tf-condensed\">\n    <div class=\"tf-header\">\n      <span ng-bind=\"title\"></span>\n    </div>\n    <div class=\"tf-content\">\n      <form class=\"ui form\" name=\"ticketForm\"\n            ng-submit=\"action.create()\">\n\n        <div class=\"field\">\n          <input type=\"text\" name=\"note\"\n                 ng-model=\"ticketFormData.note\"\n                 placeholder=\"Trade Note\">\n        </div>\n\n        <div class=\"field\">\n          <select class=\"ui selection dropdown\"\n                  ng-model=\"ticketFormData.baseCurrency\">\n            <option value=\"\">Select Currency</option>\n            <option value=\"EUR\">3198_EUR</option>\n            <option value=\"USD\">8492_USD</option>\n          </select>\n        </div>\n\n        <div class=\"field\">\n          <div class=\"ui fluid selection dropdown\">\n            <input type=\"hidden\" name=\"instrument\"\n                   ng-model=\"ticketFormData.instrument\">\n            <span class=\"text\">Select Instrument</span>\n            <div class=\"menu\">\n              <div class=\"header\">\n                Instruments available for trade\n              </div>\n              <div class=\"item\" data-value=\"EURUSD\">\n                <div><b>EURUSD</b></div>\n                <div>\n                  <small>Euro/US Dollar</small>\n                </div>\n              </div>\n              <div class=\"item\">\n                <div class=\"item\" data-value=\"EURJYP\">\n                  <div><b>EURJYP</b></div>\n                  <div>\n                    <small>Euro/Japan Dollar</small>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"ui grid relaxed\">\n          <div class=\"eight wide column\">\n            <div class=\"tf-panel tfp-select\">\n              <div class=\"ui fluid selection dropdown\">\n                <input type=\"hidden\" name=\"tradeType\"\n                       ng-model=\"ticketFormData.tradeType\">\n                <label>\n                  <small>TYPE</small>\n                </label>\n                <span class=\"text\">Select Trade Type</span>\n                <div class=\"menu\">\n                  <div class=\"item\" data-value=\"QUICKTRADE\">\n                    <div>Quick Trade</div>\n                  </div>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"eight wide column\">\n            <div class=\"tf-panel tfp-input\">\n              <label>\n                <small>EUR</small>\n              </label>\n              <input type=\"number\"\n                     ng-model=\"ticketFormData.amount\"\n                     required\n                     name=\"trade_amount\"\n                     placeholder=\"Set Amount\">\n            </div>\n          </div>\n        </div>\n\n        <div class=\"field ui grid relaxed\">\n          <div class=\"eight wide column\">\n            <div class=\"price-panel price-sell\">\n              <div class=\"pp-label\">\n                <small>SELL - EUR</small>\n              </div>\n              <div>\n                <small class=\"pp-sub\">1.09</small>\n                <span class=\"price-value--large\">97</span>\n                <small class=\"pp-super\">5</small>\n              </div>\n              <div class=\"pp-label\">\n                <small>Limit @1.0099s</small>\n              </div>\n            </div>\n          </div>\n          <div class=\"field eight wide column\">\n            <div class=\"price-panel price-buy\">\n              <div class=\"pp-label\">\n                <small>BUY - EUR</small>\n              </div>\n              <div>\n                <small class=\"pp-sub\">1.09</small>\n                <span class=\"price-value--large\">97</span>\n                <small class=\"pp-super\">2</small>\n              </div>\n              <div class=\"pp-label\">\n                <small>Limit @1.0099s</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"field\">\n          <div class=\"ui fluid selection dropdown\">\n            <span>Price Tolerance</span>\n            <span class=\"text pull-right\">Select Instrument</span>\n            <div class=\"menu\">\n              <div class=\"header\">\n                Edit Price Tolerance\n              </div>\n              <div class=\"item\"><b>±0.01%</b></div>\n              <div class=\"item\"><b>±0.02%</b></div>\n              <div class=\"item\"><b>±0.04%</b></div>\n              <div class=\"item\"><b>±0.06%</b></div>\n            </div>\n          </div>\n        </div>\n\n        <div class=\"tf-actions\">\n          <button class=\"ui approve button\" type=\"submit\"\n                  style=\"width: 100%\">Save\n          </button>\n        </div>\n\n      </form>\n    </div>\n  </div>\n</div>\n";
 
 /***/ }),
-/* 102 */
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_components_Header__ = __webpack_require__(67);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_components_Header__ = __webpack_require__(66);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module_trades_store__ = __webpack_require__(62);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_module_trades_action__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index_scss__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index_scss__ = __webpack_require__(64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__index_scss__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_Semantic_UI_dist_semantic_css__ = __webpack_require__(64);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_Semantic_UI_dist_semantic_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__lib_Semantic_UI_dist_semantic_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_Semantic_UI_dist_semantic_js__ = __webpack_require__(66);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lib_Semantic_UI_dist_semantic_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__lib_Semantic_UI_dist_semantic_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_Semantic_UI_dist_semantic_js__ = __webpack_require__(65);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__lib_Semantic_UI_dist_semantic_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__lib_Semantic_UI_dist_semantic_js__);
 var angular = __webpack_require__(11);
 __webpack_require__(24);
 
-var App = __webpack_require__(68);
+var App = __webpack_require__(67);
 
 
 
 __webpack_require__(63);
-var routesConfig = __webpack_require__(69);
-
+var routesConfig = __webpack_require__(68);
 
 
 
@@ -33994,8 +33985,8 @@ angular
 
 
 /***/ }),
-/* 103 */,
-/* 104 */
+/* 102 */,
+/* 103 */
 /***/ (function(module, exports) {
 
 /*
@@ -34051,7 +34042,7 @@ module.exports = function() {
 
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ (function(module, exports) {
 
 /*
@@ -34303,4 +34294,4 @@ function updateLink(linkElement, obj) {
 
 
 /***/ })
-],[102]);
+],[101]);

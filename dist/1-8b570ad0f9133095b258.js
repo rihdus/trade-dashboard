@@ -1,17 +1,17 @@
 webpackJsonp([1],{
 
-/***/ 107:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ngModule", function() { return ngModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__store__ = __webpack_require__(62);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__controller__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index_html__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__controller__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index_html__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__index_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__index_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__trade_scss__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__trade_scss__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__trade_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__trade_scss__);
 /**
  * Created by t_mehes on 30/6/17.
@@ -39,7 +39,7 @@ var ngModule = angular.module(__WEBPACK_IMPORTED_MODULE_0__config__["a" /* defau
 
 /***/ }),
 
-/***/ 109:
+/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -55,10 +55,10 @@ var ngModule = angular.module(__WEBPACK_IMPORTED_MODULE_0__config__["a" /* defau
 
 /***/ }),
 
-/***/ 112:
+/***/ 111:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(104)();
+exports = module.exports = __webpack_require__(103)();
 // imports
 
 
@@ -70,16 +70,16 @@ exports.push([module.i, ".tc-amount{font-size:26px}.tc-currency{position:relativ
 
 /***/ }),
 
-/***/ 115:
+/***/ 114:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(112);
+var content = __webpack_require__(111);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(105)(content, {});
+var update = __webpack_require__(104)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -97,18 +97,18 @@ if(false) {
 
 /***/ }),
 
-/***/ 117:
+/***/ 116:
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"main-section\">\n\n  <h2>Trades</h2>\n\n  <div ng-if=\"trades.length==0\"\n       class=\"ui segment\">\n    <div class=\"ui disabled dimmer\"></div>\n    <p>No Trades Today</p>\n  </div>\n\n  <div ng-if=\"trades.length>0\">\n    <p>\n      <small>Today</small>\n    </p>\n    <hr>\n    <div class=\"ui cards\" style=\"margin-bottom: 20px;\">\n      <div ng-repeat=\"trade in trades\"\n           class=\"card trade-card\">\n        <div class=\"content\">\n          <div class=\"header\"\n               ng-bind=\"trade.name\"></div>\n          <div class=\"meta\">\n            <span class=\"tc-currency\" ng-bind=\"trade.baseCurrency\"></span>\n            <span class=\"tc-amount\"><b ng-bind=\"trade.amount\"></b></span>\n          </div>\n          <div class=\"description\"\n               ng-if=\"trade.note\"\n               ng-bind=\"trade.note\">\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n\n\n  <p>\n    <small>Last Week</small>\n  </p>\n\n  <div class=\"ui cards\">\n    <div class=\"card trade-card\">\n      <div class=\"content\">\n        <div class=\"tc-header\" header\n             ng-bind=\"'Trade Name'\"></div>\n        <div class=\"meta\">\n          <span class=\"tc-currency\" ng-bind=\"'EUR'\"></span>\n          <span class=\"tc-amount\"><b ng-bind=\"'54000'\"></b></span>\n        </div>\n        <div class=\"description\"\n             ng-bind=\"'Trade num 889 - VP event 24 Aug.'\">\n        </div>\n      </div>\n    </div>\n  </div>\n\n</div>\n";
 
 /***/ }),
 
-/***/ 124:
+/***/ 123:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(108);
 /**
  * Created by t_mehes on 30/6/17.
  */

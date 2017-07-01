@@ -9,7 +9,6 @@ require('angular-ui-router');
 var routesConfig = require('./routes');
 
 import './index.scss';
-import '../lib/Semantic-UI/dist/semantic.css';
 import '../lib/Semantic-UI/dist/semantic.js';
 
 angular

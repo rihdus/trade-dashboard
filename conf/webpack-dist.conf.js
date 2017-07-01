@@ -45,9 +45,12 @@ module.exports = {
       },
       {
         test: /\.(ico|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
-        loader: 'file-loader',
+        loader: 'url-loader',
         query: {
           name: '[path][name].[ext]?[hash:8]',
+          useRelativePath: true,
+          publicPath: "./",
+          outputPath: "./"
         }
       }
     ]
