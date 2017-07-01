@@ -30,7 +30,11 @@ export function TicketBuilder($q, $document, $compile) {
 
     this.buildTicket = function (ticketData) {
       var deferred = $q.defer();
-      ticketScope.ticketFormData = {};
+      ticketScope.ticketFormData = {
+        baseCurrency: 'EUR',
+        instrument: 'EURUSD',
+        tradeType: 'QUICKTRADE'
+      };
       $modalElement.modal({
         onHide: function (elem) {
           /** Validate and submit */

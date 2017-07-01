@@ -5,22 +5,49 @@
   <div ng-if="trades.length==0"
        class="ui segment">
     <div class="ui disabled dimmer"></div>
-    <p>No Trades Available</p>
+    <p>No Trades Today</p>
   </div>
 
-  <div>
-    <div class="ui cards">
+  <div ng-if="trades.length>0">
+    <p>
+      <small>Today</small>
+    </p>
+    <hr>
+    <div class="ui cards" style="margin-bottom: 20px;">
       <div ng-repeat="trade in trades"
-           class="card">
+           class="card trade-card">
         <div class="content">
           <div class="header"
                ng-bind="trade.name"></div>
-          <div class="meta"
-               ng-bind="trade.baseCurrency"></div>
+          <div class="meta">
+            <span class="tc-currency" ng-bind="trade.baseCurrency"></span>
+            <span class="tc-amount"><b ng-bind="trade.amount"></b></span>
+          </div>
           <div class="description"
                ng-if="trade.note"
                ng-bind="trade.note">
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <p>
+    <small>Last Week</small>
+  </p>
+
+  <div class="ui cards">
+    <div class="card trade-card">
+      <div class="content">
+        <div class="tc-header" header
+             ng-bind="'Trade Name'"></div>
+        <div class="meta">
+          <span class="tc-currency" ng-bind="'EUR'"></span>
+          <span class="tc-amount"><b ng-bind="'54000'"></b></span>
+        </div>
+        <div class="description"
+             ng-bind="'Trade num 889 - VP event 24 Aug.'">
         </div>
       </div>
     </div>

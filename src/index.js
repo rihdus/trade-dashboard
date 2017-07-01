@@ -19,8 +19,4 @@ angular
   .controller('AppController', App.controller)
   .directive('headerComponent', Header)
   .service('tradeStoreService', tradeStoreService)
-// .component('footerComponent', Footer)
-// .component('mainSection', MainSection)
-// .component('todoTextInput', TodoTextInput)
-// .component('todoItem', TodoItem)
 ;

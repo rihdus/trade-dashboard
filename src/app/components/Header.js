@@ -4,7 +4,7 @@ window.$ = window.jQuery = $;
 
 import {TicketBuilder} from '../module/trades/action';
 
-function Header(TicketBuilder, tradeStoreService) {
+function Header(TicketBuilder, tradeStoreService, $location) {
   return {
     scope: {
       items: '='
@@ -24,6 +24,7 @@ function Header(TicketBuilder, tradeStoreService) {
           tickerBuilder.buildTicket()
             .then(function (newTicket) {
               tradeStoreService.addNewTrade(newTicket);
+              $location.path('/app/trade');
             });
         }
       };
@@ -31,6 +32,6 @@ function Header(TicketBuilder, tradeStoreService) {
   };
 }
 
-Header.$inject = ['TicketBuilder', 'tradeStoreService'];
+Header.$inject = ['TicketBuilder', 'tradeStoreService', '$location'];
 
 export default Header;
